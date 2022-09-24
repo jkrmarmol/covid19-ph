@@ -19,7 +19,7 @@ covidRouter.get('/', async (req, res, next) => {
     });
     if (response.ok) {
       const json = await response.json();
-      res.json(json.data)
+      res.json(json)
     }
   } catch (err) {
       console.log(err)
