@@ -1,5 +1,4 @@
 const express = require('express');
-const morgan = require('morgan');
 const cors = require('cors');
 const app = express();
 
@@ -9,7 +8,6 @@ const PORT = process.env.PORT || 3000;
 const covidRouter = require('./covid19');
 
 // Middleware
-app.use(morgan('dev'))
 app.use(cors({
   origin: '*'
 }))
@@ -28,5 +26,5 @@ app.use((err, req, res, next) => {
 
 // Server Listening
 app.listen(PORT, () => {
-  console.log(`Server is now lisrening on port ${PORT}`)
+  console.log(`Server is now listening on port ${PORT}`)
 });

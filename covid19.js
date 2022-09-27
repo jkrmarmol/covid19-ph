@@ -19,6 +19,11 @@ covidRouter.get('/', async (req, res, next) => {
     });
     if (response.ok) {
       const json = await response.json();
+      json.developer = {
+        name: 'Kurt Russelle Marmol',
+        github: 'github.com/jkrmarmol',
+        contact: 'contact@jkrmarmol.com'
+      }
       res.json(json)
     }
   } catch (err) {
