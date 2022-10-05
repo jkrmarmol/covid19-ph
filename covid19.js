@@ -22,7 +22,7 @@ covidRouter.get('/', async (req, res, next) => {
       json.developer = {
         name: 'Kurt Russelle Marmol',
         github: 'github.com/jkrmarmol',
-        contact: 'contact@jkrmarmol.com'
+        contact: 'jkurtrussellemarmol@gmail.com'
       }
       res.json(json)
     }
